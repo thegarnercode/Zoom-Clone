@@ -4,11 +4,12 @@
 - initialize our first view ( what you see on front-end )  > DONE
 - Create a room id > DONE
 - Add the ability to view our own Video > Done
-- Add the ability to allow others to stream their video
-- Add styling 
-- Ability to create messages
+- Add the ability to allow others to stream their video > DONE
+- Add styling > DONE 
+- Ability to create messages > DONE
 - Add mute button
 - Add STOP video button
+- Deploy
 
 # When using NodeJS
 
@@ -60,4 +61,54 @@
 - Add CSS rel link to html document room.ejs
 
 # Others stream their video
+- Introduce socket.io
+(what are sockets?  sockets is used for asynchronous real time communication. http you can only make a request through the server but the server can only respond it can not start the request, with socket.io the server can communicate with you can you can communicate with it and the server doesnt have to wait a request to start a message)
+- install socket.io (npm install socket.io)
+- import socket.io (const io)
+- create connection for when youre connected
+- tell socket you joined room
+- import socket in room.ejs src=""
+- emit socket.io
+- import socket.io script.js
+- (had to remove defer> from script so video will show, defer means to load last)
+- should see joined room in terminal
+- create script room_id 
+- create socket.join in server.js
+- broadcast user in server.js
+-  go to script js // so we listen o that user connected
+- identify user specifically
+- peer.js wraps the browsers WebRTC implementaion to provide a complete peer to peer connection. 
+- webrtc - real-time communication for the web 
+npm install peer
+- import peer const
+-import peer script src ( from peerjs.com)
+-specify to peer server what url youre going to use 
+- listen on opening of peer connection
+- create new peer connection
+- (peer. on object generates id's)
+- Now we have 2 people that are able to talk to each other
+
+# Styling
+- create class main = where main zoom call live
+- left main __left = main videos id video grid and controls
+- right main__right = main Chat
+- style in style.css
+- height: 100vh (meaning 100 vertical height)
+- style main left 
+- create main controls in ejs
+- go to font awesome and import icons in room.ejs
+- create div for icons 
+- css style div 
+- create chat container
+- style chat container
+- add BOOTSTRAP for font styling
+
+# Create Messages
+- $ sign replaces Jquery
+- socket. emit to send 
+- socket.on to receive
+
+# Mute Button / Stop Button
+- const mute/unmute function
 - 
+
