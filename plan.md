@@ -110,5 +110,5 @@ npm install peer
 
 # Mute Button / Stop Button
 - const mute/unmute function
-- 
+- create a funtion call play stop
 
